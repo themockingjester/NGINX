@@ -11,6 +11,7 @@
 ##### sudo systemctl stop nginx (for stopping nginx)
 
 ## Basic structure for nginx server config file (having both frontend and backend deployed)
+![image](https://user-images.githubusercontent.com/44976021/179823620-7bb10265-1f5d-4abd-8859-c992bbe94c63.png)
 
 ```
 upstream loadbalancer {
@@ -49,5 +50,13 @@ server {
 ## Best Source For Deploying Both Front End And Backend On Same Server
 https://medium.com/geekculture/deploying-a-react-app-and-a-node-js-server-on-a-single-machine-with-pm2-and-nginx-15f17251ee74
 
-
+## For Generating SSl Certificate for server
+```
+sudo snap install core; 
+sudo snap refresh core
+sudo snap install --classic certbot
+sudo ln -s /snap/bin/certbot /usr/bin/certbot
+sudo certbot --nginx
+```
+You can also test Certbot’s automatic renewal: ```sudo certbot renew --dry-run```
 
