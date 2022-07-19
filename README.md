@@ -1,3 +1,3 @@
 # NGINX
 
-![Nginx Logo](https://toppng.com/nginx-logo-vector-PNG-free-PNG-Images_459942)
+![Nginx Logo](https://miro.medium.com/max/1400/1*z7-lgU_f9u7IXzuMa9Cebw.png)
