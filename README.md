@@ -57,6 +57,16 @@ sudo snap refresh core
 sudo snap install --classic certbot
 sudo ln -s /snap/bin/certbot /usr/bin/certbot
 sudo certbot --nginx
+#### After installing certificate you might the want to access those files (certificate file and key file ) directly from lets enscrypt folder then you will get an error <br>
+To fix this error:
+# chmod 755 /etc/letsencrypt/live/
+# chmod 755 /etc/letsencrypt/archive/
+# ll /etc/letsencrypt/
+total 0
+drwxr-xr-x. 3 root root 38 Sep 28 11:24 archive
+drwxr-xr-x. 3 root root 38 Sep 28 11:24 live
+...
+
 ```
 You can also test Certbot’s automatic renewal: ```sudo certbot renew --dry-run```
 
